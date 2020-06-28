@@ -51,6 +51,7 @@ def main(image_file):
 
     list_of_colored_grids = [n for n in occupied_grids if n not in obstacles]
 
+    # Running through each grid with coloured object to find a match
     for startimage in list_of_colored_grids:
         img_1 = list_images[startimage[0]-1][startimage[1]-1]
 
@@ -77,7 +78,7 @@ def main(image_file):
                         _result = list(list2[1:-1])
                         result_1 = list(list2[:])
 
-                # join those two objects of same shape with a line
+                # join those two same objects with a line
                 while result_1:
                     first_co_ord = result_1.pop(0)
                     if result_1:
