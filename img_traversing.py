@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
-
 #Traversing through the image to perform image processing
+
 
 def sliding_window(image, stepSize, windowSize):
     # slide a window across the image
